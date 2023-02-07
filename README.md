@@ -14,6 +14,9 @@ Sistema de Citas Medicas usando PHP, MySQL y Bootstrap.
 
 ## Configuracion de MariaDB
 * Crea base de datos a partir del volcado de datos `schema.sql` . Ese volcado crea un usuario admin/admin. Puedes cambiarlo en el archivo `schema.sql` o crear uno nuevo.
+
+https://github.com/lmorillas/bookmedik/blob/efa12823abc5bbcc295f0764219db2f96a59602e/schema.sql#L20
+
 * Crea el usuario en MariaDB para que pueda acceder a la base de datos. Y dale permisos.
 ```sh
 $ sudo mysql -u root
