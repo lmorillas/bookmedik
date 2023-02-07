@@ -15,11 +15,13 @@ Sistema de Citas Medicas usando PHP, MySQL y Bootstrap.
 ## Configuracion de MariaDB
 * Crea base de datos a partir del volcado de datos `schema.sql` . Ese volcado crea un usuario admin/admin. Puedes cambiarlo en el archivo `schema.sql` o crear uno nuevo.
 * Crea el usuario en MariaDB para que pueda acceder a la base de datos. Y dale permisos.
-```mysql
+```sh
 $ sudo mysql -u root
 MariaDB [(none)]> CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
 MariaDB [(none)]> GRANT ALL PRIVILEGES ON bookmedik.* TO 'admin'@'localhost';
+FLUSH PRIVILEGES;
 ```
+
 ## Crea el nombre `bookmedik.local` en el archivo `/etc/hosts` o en windows en `C:\Windows\System32\drivers\etc\hosts` para que apunte a `localhost`.
 
 ## Comprueba que funciona correctamente accediendo con el navegador a `http://bookmedik.local:8080` (o el puerto que hayas configurado en el `Vagrantfile`)
