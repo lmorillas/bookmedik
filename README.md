@@ -22,9 +22,11 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON bookmedik.* TO 'admin'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
-## Crea el nombre `bookmedik.local` en el archivo `/etc/hosts` o en windows en `C:\Windows\System32\drivers\etc\hosts` para que apunte a `localhost`.
+## Dominio
+Crea el nombre `bookmedik.local` en el archivo `/etc/hosts` o en windows en `C:\Windows\System32\drivers\etc\hosts` para que apunte a `localhost`.
 
-## Comprueba que funciona correctamente accediendo con el navegador a `http://bookmedik.local:8080` (o el puerto que hayas configurado en el `Vagrantfile`)
+## Acceder con navegador
+Comprueba que funciona correctamente accediendo con el navegador a `http://bookmedik.local:8080` (o el puerto que hayas configurado en el `Vagrantfile`)
 
 ## Si hay errores
 * comprueba el log de apache2 en `/var/log/apache2/error.log`
